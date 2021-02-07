@@ -1,0 +1,40 @@
+Dumitrescu Andrei 323CC
+
+Task 1 -  OTP:
+
+	Parcurg caracter cu caracter si fac xor intre cele 2 valori.
+	Caracterele sunt mutate in registre de 8 cu comanda mov.
+
+Task 2 - Caesar Cipher
+
+	Adica key-ul in intervalul [0, 26]
+ 	Parcurg litera cu litera sirul. Verific daca este litera mare
+ 	sau mica. Apoi la litera curenta adaug valaore key-ului si 
+ 	verific daca depaseste 'z' sau 'Z' in functie de caz.
+ 	In aceasta situatie, scad 26, pentru a-l face litera.
+ 	Retin rezultatul final.
+
+ Task 3 - Vigenere Cipher
+ 	Parcurg fiecare caracter din sir si verific daca este litera
+ 	sau nu. Daca este litera maresc un counter (pozitie in sirul key).
+ 	Aflu cu cat trebuie deplasata la dreapta litera si, la fel ca la 2,
+ 	fac modificarile necesare. La final retin rezultatul.
+ 	Pentru a nu concatena sirul key pana sa ajunga la valoarea buna,
+ 	retin intr-un counter la ce pozitie ar trebui sa ajunga si cand
+ 	ajunge la final, o iau de la inceput.
+
+ Task 4 - Strstr
+ 	Parcurg caracter cu caracter sirul initial si il verific pe fiecare
+ 	cu caracterul initial din needle. Daca sunt egale, fac inca un for
+ 	pentru a vedea daca si urmatoarele caractere sunt bune.
+ 	Daca sunt bune am aflat raspunsul (in variabila dd counter),
+ 	iar daca nu continui cautarea.
+
+ Task 5 - Binary to Hexadecimal
+ 	Am calculat cate elemente trebuie sa contina sirul hexa, scazand succesiv
+ 	4 din lungimea sirului initial.
+ 	Apoi parcurg de la final spre inceput sirul initial si formez
+ 	blocuri de cate 4 biti pe care ii transform in decimal, urmand dupa
+ 	sa ii transform in caracterul specific din hexa.
+ 	La final, daca au ramas biti neconvertiti, aflu primul caracter.
+ 	Pentru orice sir hexa, adaug '\n' la sfarsitul acestuia.
